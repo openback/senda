@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+'use strict';
+
+var program = require('commander');
+var sendaUtil = require('./lib/util.js');
+var lambdaNames;
+
+program.version('0.0.1')
+    .arguments('[name...]').action(function(names) { lambdaNames = names; })
+    .parse(process.argv);
+
+sendaUtil.upload(lambdaNames, function(err) {
+    if (err) {
+        console.error('ERROR: %s', err);
+    } else {
+        console.log('Done.');
+    }
+});

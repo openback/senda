@@ -1,0 +1,35 @@
+{
+  "name": "senda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "senda",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/openback/senda.git"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "archiver": "^0.21.0",
+    "async": "^1.5.2",
+    "commander": "^2.9.0",
+    "delete": "^0.3.0",
+    "lodash": "^4.0.1",
+    "map-stream": "0.0.6",
+    "node-archiver": "^0.2.0",
+    "node-aws-lambda": "^0.1.7",
+    "vinyl-fs": "^2.3.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chck": "^0.1.2",
+    "dirty-chai": "^1.2.2",
+    "mocha": "^2.3.4",
+    "mock-aws": "^1.2.3",
+    "saws": "0.0.8"
+  }
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+'use strict';
+
+var program = require('commander');
+
+program.version('0.0.1')
+    .command('build [name...]', 'build one or more packages')
+    .command('zip [query]', 'search with optional query')
+    .command('upload [name...]', 'upload one or more lambdas')
+    .command('invoke [name...]', 'invoke one or more lambdas with an event')
+    .command('clean [name...]', 'clean one or more packages')
+    .parse(process.argv);
