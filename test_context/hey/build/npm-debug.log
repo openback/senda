@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--progress=false' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData which
+20 silly mapToRegistry name which
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/which
+24 silly fetchOtherPackageData shared-definitions@file:../shared_modules/definitions
+25 silly cache add args [ 'shared-definitions@file:../shared_modules/definitions',
+25 silly cache add   null ]
+26 verbose cache add spec shared-definitions@file:../shared_modules/definitions
+27 silly cache add parsed spec Result {
+27 silly cache add   raw: 'shared-definitions@file:../shared_modules/definitions',
+27 silly cache add   scope: null,
+27 silly cache add   name: 'shared-definitions',
+27 silly cache add   rawSpec: 'file:../shared_modules/definitions',
+27 silly cache add   spec: '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions',
+27 silly cache add   type: 'local' }
+28 error addLocal Could not install /Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions
+29 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions'
+29 silly fetchPackageMetaData     at Error (native)
+29 silly fetchPackageMetaData  error for shared-definitions@file:../shared_modules/definitions { [Error: ENOENT: no such file or directory, open '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions']
+29 silly fetchPackageMetaData   errno: -2,
+29 silly fetchPackageMetaData   code: 'ENOENT',
+29 silly fetchPackageMetaData   syscall: 'open',
+29 silly fetchPackageMetaData   path: '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions' }
+30 verbose request uri https://registry.npmjs.org/which
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 11:23:25 AM
+33 verbose request id 8b409692471f9cfe
+34 verbose etag "B52BVY4O4P9O8PT73707GPCT8"
+35 http request GET https://registry.npmjs.org/which
+36 http 304 https://registry.npmjs.org/which
+37 verbose headers { date: 'Wed, 27 Jan 2016 16:23:25 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   etag: '"B52BVY4O4P9O8PT73707GPCT8"',
+37 verbose headers   age: '62',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-jfk1035-JFK',
+37 verbose headers   'x-cache': 'HIT',
+37 verbose headers   'x-cache-hits': '6',
+37 verbose headers   'x-timer': 'S1453911805.745264,VS0,VE0',
+37 verbose headers   vary: 'Accept' }
+38 silly get cb [ 304,
+38 silly get   { date: 'Wed, 27 Jan 2016 16:23:25 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     'cache-control': 'max-age=300',
+38 silly get     etag: '"B52BVY4O4P9O8PT73707GPCT8"',
+38 silly get     age: '62',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-jfk1035-JFK',
+38 silly get     'x-cache': 'HIT',
+38 silly get     'x-cache-hits': '6',
+38 silly get     'x-timer': 'S1453911805.745264,VS0,VE0',
+38 silly get     vary: 'Accept' } ]
+39 verbose etag https://registry.npmjs.org/which from cache
+40 verbose get saving which to /Users/tcaraballo/.npm/registry.npmjs.org/which/.cache.json
+41 silly resolveWithNewModule which@1.2.4 checking installable status
+42 silly cache add args [ 'which@^1.2.4', null ]
+43 verbose cache add spec which@^1.2.4
+44 silly cache add parsed spec Result {
+44 silly cache add   raw: 'which@^1.2.4',
+44 silly cache add   scope: null,
+44 silly cache add   name: 'which',
+44 silly cache add   rawSpec: '^1.2.4',
+44 silly cache add   spec: '>=1.2.4 <2.0.0',
+44 silly cache add   type: 'range' }
+45 silly addNamed which@>=1.2.4 <2.0.0
+46 verbose addNamed ">=1.2.4 <2.0.0" is a valid semver range for which
+47 silly addNameRange { name: 'which', range: '>=1.2.4 <2.0.0', hasData: false }
+48 silly mapToRegistry name which
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/which
+52 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+53 verbose get https://registry.npmjs.org/which not expired, no request
+54 silly addNameRange number 2 { name: 'which', range: '>=1.2.4 <2.0.0', hasData: true }
+55 silly addNameRange versions [ 'which',
+55 silly addNameRange   [ '1.0.0',
+55 silly addNameRange     '1.0.1',
+55 silly addNameRange     '1.0.2',
+55 silly addNameRange     '1.0.3',
+55 silly addNameRange     '1.0.5',
+55 silly addNameRange     '1.0.6',
+55 silly addNameRange     '1.0.7',
+55 silly addNameRange     '1.0.8',
+55 silly addNameRange     '1.0.9',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.1.1',
+55 silly addNameRange     '1.1.2',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '1.2.1',
+55 silly addNameRange     '1.2.4' ] ]
+56 silly addNamed which@1.2.4
+57 verbose addNamed "1.2.4" is a plain semver version for which
+58 silly cache afterAdd which@1.2.4
+59 verbose afterAdd /Users/tcaraballo/.npm/which/1.2.4/package/package.json not in flight; writing
+60 verbose afterAdd /Users/tcaraballo/.npm/which/1.2.4/package/package.json written
+61 silly rollbackFailedOptional Starting
+62 silly rollbackFailedOptional Finishing
+63 silly runTopLevelLifecycles Starting
+64 silly runTopLevelLifecycles Finishing
+65 silly install printInstalled
+66 verbose stack Error: ENOENT: no such file or directory, open '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions'
+66 verbose stack     at Error (native)
+67 verbose cwd /Users/tcaraballo/src/senda/test_context/hey/build
+68 error Darwin 14.5.0
+69 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--progress=false"
+70 error node v5.3.0
+71 error npm  v3.3.12
+72 error path /Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions
+73 error code ENOENT
+74 error errno -2
+75 error syscall open
+76 error enoent ENOENT: no such file or directory, open '/Users/tcaraballo/src/senda/test_context/hey/shared_modules/definitions'
+76 error enoent This is most likely not a problem with npm itself
+76 error enoent and is related to npm not being able to find a file.
+77 verbose exit [ -2, true ]
